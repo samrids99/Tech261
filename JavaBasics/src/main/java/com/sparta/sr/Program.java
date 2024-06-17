@@ -7,14 +7,18 @@ public class Program {
     }
 
     public static String getGreeting(int timeOfDay) {
-        String greeting;
-        if (timeOfDay >= 5 && timeOfDay <= 12) {
-            greeting = "Good morning!";
-        } else if (timeOfDay >= 12 && timeOfDay <= 18) {
-            greeting = "Good Afternoon!";
+        if (0 <= timeOfDay && timeOfDay < 5) {
+            return "You should be sleeping!";
+        } else if (5 <= timeOfDay && timeOfDay < 12) {
+            return "Good Morning!";
+        } else if (timeOfDay == 12) {
+            return "Lunch time!";
+        } else if (12 < timeOfDay && timeOfDay <= 18) {
+            return "Good Afternoon!";
+        } else if (18 < timeOfDay && timeOfDay <= 24) {
+            return "Good Evening!";
         } else {
-            greeting = "Good Evening!";
+            return "Invalid time. Please enter a value between 0 and 24.";
         }
-        return greeting;
     }
 }
