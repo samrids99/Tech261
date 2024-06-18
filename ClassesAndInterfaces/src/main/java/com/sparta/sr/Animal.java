@@ -1,7 +1,7 @@
 package com.sparta.sr;
 
 // state and behaviour - this is when we use an abstract class
-public class Animal {
+public abstract class Animal {
   private String name;
   private String breed;
   private int age;
@@ -34,5 +34,9 @@ public class Animal {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public void play() {
+        System.out.println(name + " wants to play");
     }
 }
