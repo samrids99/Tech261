@@ -9,4 +9,8 @@ public class Cat extends Animal{
     public void play() {
         System.out.println(super.getName() + " does not want to play");
     }
+
+    public void eat() {
+        System.out.println("kibble");
+    }
 }

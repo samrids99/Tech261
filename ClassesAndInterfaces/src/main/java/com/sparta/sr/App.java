@@ -8,5 +8,6 @@ public class App {
         tia.play();
         pop.play();
         pop.play("Carl");
+        pop.eat();
     }
 }
