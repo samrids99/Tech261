@@ -5,7 +5,7 @@ public class DevOpsTrainee extends Trainee implements Trainable {
     private String[] certifications;
     private String[] projects;
 
-    public DevOpsTrainee(String name, int age, String email, int phone) {
+    public DevOpsTrainee(String name, int age, String email, String phone) {
         super(name, age, email, phone);
     }
 
@@ -35,7 +35,7 @@ public class DevOpsTrainee extends Trainee implements Trainable {
 
     @Override
     public void train() {
-
+        System.out.println(getName() + "doesn't train");
     }
 
     @Override

@@ -6,7 +6,7 @@ public class JavaTrainee extends Trainee implements Trainable {
     private String[] projects;
     private String github;
 
-    public JavaTrainee(String name, int age, String email, int phone) {
+    public JavaTrainee(String name, int age, String email, String phone) {
         super(name, age, email, phone);
     }
 
@@ -44,11 +44,11 @@ public class JavaTrainee extends Trainee implements Trainable {
 
     @Override
     public void train() {
-
+        System.out.println("trains hard");
     }
 
     @Override
     public void study() {
-
+        System.out.println(super.getName() + "revises for an hour");
     }
 }

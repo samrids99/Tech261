@@ -1,12 +1,12 @@
 package com.sparta.sr;
 
-public class  Trainee {
+public abstract class  Trainee {
     private String name;
     private int age;
     private String email;
-    private int phone;
+    private String phone;
 
-    public Trainee(String name, int age, String email, int phone) {
+    public Trainee(String name, int age, String email, String phone) {
         this.name = name;
         this.age = age;
         this.email = email;
@@ -37,11 +37,11 @@ public class  Trainee {
         this.email = email;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 }
