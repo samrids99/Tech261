@@ -23,7 +23,7 @@ public class App {
         }
         // start at index 2 so can look back through array
         for (int i = 2; i < numbers.length; i++) {
-            // does number3 equal number 2 as well as number 1?
+            // does number 3 equal number 2 as well as number 1?
             if (numbers[i] == numbers[i - 1] && numbers[i] == numbers[i - 2]) {
                 return true;
             }
